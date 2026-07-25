@@ -29,7 +29,7 @@ class Sine_Adapter(nn.Linear):
 
             self.w_up = nn.Parameter(torch.zeros(out_features, r))
             
-            self.g = nn.Parameter(torch.tensor(10.0)) 
+            self.g = torch.tensor(10.0) 
             
             self.reset_rsa_parameters()
         
